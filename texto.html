@@ -14,14 +14,12 @@
 
     .foto-vertical {
       display: block;
-      margin: 30px auto 25px auto;
+      margin: 30px auto 30px auto;
       height: 75vh;
       width: auto;
       max-width: 90%;
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-      z-index: 2;
-      position: relative;
     }
 
     .texto {
@@ -36,8 +34,6 @@
       text-align: center;
       font-size: 1.125rem;
       line-height: 1.6;
-      z-index: 1;
-      position: relative;
     }
 
     .hearts-container {
@@ -84,19 +80,20 @@
 </head>
 <body>
 
-  <!-- Imagem centralizada -->
+  <!-- Corações caindo -->
+  <div class="hearts-container" id="hearts-container"></div>
+
+  <!-- Imagem -->
   <img src="img/1000039512.jpeg" alt="Foto de vocês dois" class="foto-vertical">
 
-  <!-- Texto que agora flui abaixo da imagem -->
+  <!-- Texto embaixo da imagem -->
   <div class="texto">
-    Maria Luiza de Oliveira, você é tudo aquilo que eu procurei por anos. Você é o amor da minha vida, a minha luz, e eu tenho muito orgulho de você, tenho muita sorte de ter te conhecido, você faz todos os meus dias ficarem cheios de cor só com o seu ‘bom dia’. Você é o motivo pelo qual eu tenho forças para levantar da cama e seguir o meu dia, sempre buscando ser melhor por você, por mim, por nós e pelo nosso futuro juntos.
-    <br><br>
+    Maria Luiza de Oliveira, você é tudo aquilo que eu procurei por anos. Você é o amor da minha vida, a minha luz, e eu tenho muito orgulho de você. Tenho muita sorte de ter te conhecido. Você faz todos os meus dias ficarem cheios de cor só com o seu ‘bom dia’. <br><br>
+    Você é o motivo pelo qual eu tenho forças para levantar da cama e seguir o meu dia, sempre buscando ser melhor por você, por mim, por nós e pelo nosso futuro juntos. <br><br>
     Eu te amo muito, Malu. Você sempre será a minha princesinha.
   </div>
 
-  <!-- Corações animados -->
-  <div class="hearts-container" id="hearts-container"></div>
-
+  <!-- Script dos corações -->
   <script>
     const numHearts = 100;
     const container = document.getElementById("hearts-container");
